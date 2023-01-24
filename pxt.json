@@ -2,8 +2,7 @@
     "name": "U5 Collaborative Coding Project",
     "description": "",
     "dependencies": {
-        "device": "*",
-        "darts": "*"
+        "device": "*"
     },
     "files": [
         "main.blocks",
@@ -23,5 +22,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
