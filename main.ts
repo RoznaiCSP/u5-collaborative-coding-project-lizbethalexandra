@@ -1,3 +1,10 @@
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    let score = 0
+    info.changeScoreBy(1)
+    if (score == 3) {
+        game.splash("Based on these items collected answer this riddle.")
+    }
+})
 info.onLifeZero(function () {
     game.over(false, effects.dissolve)
 })
@@ -123,7 +130,7 @@ scene.setBackgroundImage(img`
     dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
     dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
     `)
-let mySprite = sprites.create(img`
+let viri = sprites.create(img`
     . f f f d d d d d d . . . . 
     f f f d d d d d d d d . . . 
     f f d d d d d d d d d d . . 
@@ -141,6 +148,7 @@ let mySprite = sprites.create(img`
     . . . . f f f f f f . . . . 
     . . . . . f f f . . . . . . 
     `, SpriteKind.Player)
-mySprite.setPosition(7, 51)
-controller.moveSprite(mySprite)
-mySprite.setStayInScreen(true)
+viri.setPosition(7, 51)
+controller.moveSprite(viri)
+viri.setStayInScreen(true)
+info.setScore(0)
