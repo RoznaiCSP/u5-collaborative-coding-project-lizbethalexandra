@@ -2,7 +2,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
     let score = 0
     info.changeScoreBy(1)
     if (score == 3) {
-        game.splash("Based on these items collected answer this riddle.", "What has a neck but no head?")
+        game.splash("Based on these items collected answer this riddle.", "What has a neck but no head??")
     }
 })
 info.onLifeZero(function () {
@@ -148,7 +148,7 @@ let viri = sprites.create(img`
     . . . . f f f f f f . . . . 
     . . . . . f f f . . . . . . 
     `, SpriteKind.Player)
-viri.setPosition(7, 51)
+viri.setPosition(8, 51)
 controller.moveSprite(viri)
 viri.setStayInScreen(true)
 info.setScore(0)
