@@ -2,7 +2,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
     let score = 0
     info.changeScoreBy(1)
     if (score == 3) {
-        game.splash("Based on these items collected answer this riddle.")
+        game.splash("Based on these items collected answer this riddle.", "What has a neck but no head?")
     }
 })
 info.onLifeZero(function () {
